@@ -63,7 +63,7 @@ function setCurrentDateAndHour(){
                 newHtml = newHtml + '<textarea class="col-md-10 description past" id="text' + 
                     hourMap
                     //comment
-                    //poo
+                    //justin's awesome
                     
             }
 
