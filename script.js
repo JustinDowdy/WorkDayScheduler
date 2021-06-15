@@ -64,6 +64,7 @@ function setCurrentDateAndHour(){
                     hourMap
                     //comment
                     //comment2
+                    //comment3
             }
 
 
