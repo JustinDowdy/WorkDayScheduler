@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <link rel="stylesheet" href="styleJustin.css" />
+    <title>Work Day Scheduler</title>
+
+  </head>
+
+  <body>
+    <p>
+        <h2>Justins countdown to his big dump</h2>
+        <!-- container for Moment.js output -->
+        <div id="displayMoment"></div>
+        
+        <h2>JavaScript Date</h2>
+        <!-- container for JavaScript Date output -->
+        <div id="displayJsDate"></div>
+    </p>
+
+    <table>
+        <body>
+            <tr>
+                <th>09:00</th>
+                <td rowspan="1" class="awesomeness">lets goo</td>
+            </tr>
+            <tr>
+                <th>10:00</th>
+            </tr>
+            <tr>
+                <th>11:00</th>
+            </tr>
+            <tr>
+                <th>12:00</th>
+                <td rowspan="3" class="stage-saturn"></td>
+            </tr>
+            <tr>
+                <th>01:00</th>
+            </tr>
+            <tr>
+                <th>02:00</th>
+            </tr>
+            <tr>
+                <th>03:00</th>
+            </tr>
+            <tr>
+                <th>04:00</th>
+            </tr>
+            <tr>
+                <th>05:00</th>
+            </tr>
+        </body>
+    </table>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <script src="script.js"></script>
+     
+
+     <script type="text/javascript">
+     //moment.locale('LT');
+        (function()
+        {
+          // instantiate a moment object
+          var NowMoment = moment();
+          
+          // instantiate a JavaScript Date object
+          var NowDate = new Date();
+          
+          // display value of moment object in #displayMoment div
+          var eDisplayMoment = document.getElementById('displayMoment');
+          eDisplayMoment.innerHTML = NowMoment;
+          
+          // display value of Date object in #displayJsDate div
+          var eDisplayDate = document.getElementById('displayJsDate');
+          eDisplayDate.innerHTML = NowDate;
+        })();
+        </script>
+</body>
+</html>
+
+<!-- 
+IF 
+    var eDisplayMoment (currentTime) is greater than > (TIME PAST) the times shown in 
+    the HTML calendar then make the color GRAY
+
+IF 
+    it is equal (the same time) then make the color red
+
+IF 
+    the time is before them make color green
+
+
+    -Delete the half hour
+    -MAke the CSS for colors 
+        -add green
+        - add gray
+        - add red
+
+-->
